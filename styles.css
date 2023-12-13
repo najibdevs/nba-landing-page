@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*----- header -----*/
+.header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.4)), url(images/kobe-banner-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    margin: auto;
+    display: block;
+    background: blue;
+    transition: 1s;
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}
+
+.text-box h1 {
+    font-size: 4rem;
+    margin: 20px;
+    color: white;
+}
+
+.text-box p {
+    margin: 20px;
+    color: white;
+}
+
+.hero-btn {
+    text-decoration: none;
+    padding: 12px 34px;
+    border: 1px solid white;
+    display: inline-block;
+    color: white;
+    transition: 1s;
+}
+
+.hero-btn:hover {
+    background: blue;
+    border: 1px solid blue;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    nav img {
+        width: 100px;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: blue;
+        width: 200px;
+        height: 100vh;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa-solid {
+        color: white;
+        margin: 30px;
+        display: block;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .text-box h1 {
+        font-size: 2rem;
+    }
+}
+
+/*----- featured players -----*/
+.featured {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.featured h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.featured p {
+    color: #777;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.featured-col {
+    flex-basis: 31%;
+    background: rgb(224, 246, 253);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.5s;
+}
+
+.featured-col h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.featured-col img {
+    object-fit: cover;
+    width: 330px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .featured-col img {
+        width: 270px;
+        height: 330px;
+    }
+}
+
+/*----- stadiums -----*/
+.stadiums {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.stadiums-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stadiums-col img {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(0, 89, 255, 0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*----- collectibles -----*/
+.collectibles {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.collectibles-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.collectibles-col img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.collectibles-col p {
+    padding: 0;
+}
+
+.collectibles-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/*----- testimonials -----*/
+.testimonials {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonial-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: rgb(224, 246, 253);
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonial-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonial-col p {
+    padding: 0;
+}
+
+.testimonial-col h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonial-col .fa-solid {
+    color: #f44336;
+}
+
+@media (max-width: 700px) {
+    .testimonial-col img {
+        margin-left: 0px;
+        margin-right: 15px;
+
+    }
+}
+
+.cta {
+        margin: 100px auto;
+        width: 80%;
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/hero-banner.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        text-align: center;
+        padding: 100px 0;
+    }
+
+.cta h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px) {
+    .cta h1 {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+

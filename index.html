@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NBA Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <section class="header">
+      <nav>
+        <a href="#"><img src="images/nba-logo.png" alt="NBA Logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">TEAMS</a></li>
+            <li><a href="#">PLAYERS</a></li>
+            <li><a href="#">SCHEDULE</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>World's Premier Basketball League</h1>
+        <p>
+          Exploring basketball, its athletes, and the league can be an engaging
+          journey. Acquiring HTML, CSS,<br />JavaScript proficiency can vitalize
+          your NBA-themed website.
+        </p>
+        <a href="#" class="hero-btn">Visit Us To Know More</a>
+      </div>
+    </section>
+
+    <!-- Featured Players -->
+    <section class="featured">
+      <h1>Featured Players</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+      <div class="row">
+        <div class="featured-col">
+          <img src="images/micheal-jordan.webp" alt="Michael Jordan" />
+          <h3>Michael Jordan</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
+            asperiores quae voluptates cum iusto accusantium ullam nulla
+            nesciunt aliquid praesentium.
+          </p>
+        </div>
+
+        <div class="featured-col">
+          <img
+            src="images/04867c3067d674af301936bc4064472b.jpg"
+            alt="Steph Curry"
+          />
+          <h3>Steph Curry</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
+            asperiores quae voluptates cum iusto accusantium ullam nulla
+            nesciunt aliquid praesentium.
+          </p>
+        </div>
+
+        <div class="featured-col">
+          <img
+            src="images/lebron-james.jpg"
+            alt="LeBron James"
+            class="lebron"
+          />
+          <h3>LeBron James</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
+            asperiores quae voluptates cum iusto accusantium ullam nulla
+            nesciunt aliquid praesentium.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!----- Stadiums ----->
+    <section class="stadiums">
+      <h1>Our Stadiums</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+      <div class="row">
+        <div class="stadiums-col">
+          <img src="images/maddison-square.png" />
+          <div class="layer">
+            <h3>United Center</h3>
+          </div>
+        </div>
+        <div class="stadiums-col">
+          <img src="images/chicago-bulls.jpg_large" />
+          <div class="layer">
+            <h3>Chase Center</h3>
+          </div>
+        </div>
+        <div class="stadiums-col">
+          <img src="images/staple-center.jpg" />
+          <div class="layer">
+            <h3>Staples Center</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----- Collectibles ----->
+    <section class="collectibles">
+      <h1>Our Collectibles</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="row">
+        <div class="collectibles-col">
+          <img src="images/jordan-1s.webp" />
+          <h3>Jordans</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
+            asperiores quae voluptates cum iusto accusantium ullam nulla
+            nesciunt aliquid praesentium.
+          </p>
+        </div>
+        <div class="collectibles-col">
+          <img
+            src="images/basketball-v2-removebg-preview.png"
+            style="width: 280px"
+          />
+          <h3>Basketball</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
+            asperiores quae voluptates cum iusto accusantium ullam nulla
+            nesciunt aliquid praesentium.
+          </p>
+        </div>
+        <div class="collectibles-col">
+          <img src="images/stickers.webp" />
+          <h3>Stickers</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
+            asperiores quae voluptates cum iusto accusantium ullam nulla
+            nesciunt aliquid praesentium.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!----- Testimonials ----->
+    <section class="testimonials">
+      <h1>What our Students Say</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+      <div class="row">
+        <div class="testimonial-col">
+          <img src="images/user1.jpg" alt="User 1" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              reprehenderit culpa quia unde ut ipsum facere officia temporibus
+              qui!
+            </p>
+            <h3>Christine Berkley</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+
+        <div class="testimonial-col">
+          <img src="images/user2.jpg" alt="User 2" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              reprehenderit culpa quia unde ut ipsum facere officia temporibus
+              qui!
+            </p>
+            <h3>David Byer</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----- Call To Action ----->
+    <section class="cta">
+      <h1>Come And Join For Us For An Exciting Ride<br>From Anywhere In The World</h1>
+      <a href="#" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!----- Javascript ----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
